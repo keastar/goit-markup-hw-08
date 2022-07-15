@@ -1,34 +1,36 @@
 .top {
     vertical-align: 50%;
+
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        font-family: "Raleway", sans-serif;
+        color: var(--second-text-color);
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        text-align: left;
+        text-decoration: none;
+
+        margin-right: 93px;
+        padding-top: 24px;
+        padding-bottom: 25px;
+
+    }
+    
 }
 
-.top-container {
-    display: flex;
-    align-items: center;
-}
-
-.top-logo {
-    font-family: "Raleway", sans-serif;
-    color: var(--second-text-color);
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    text-align: left;
-    text-decoration: none;
-
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-
-}
-
-a.top-logo>span {
+a.top__logo>span {
     color: var(--main-text-color);
 }
 
-.top-menu a {
+.top__menu a {
     text-decoration: none;
     color: var(--main-text-color);
     font-weight: 500;
@@ -38,15 +40,15 @@ a.top-logo>span {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.top-menu a:hover {
+.top__menu a:hover {
     color: var(--second-text-color);
 }
 
-.top-menu a:focus {
+.top__menu a:focus {
     color: var(--second-text-color);
 }
 
-.top-list {
+.top__list {
     display: flex;
     align-items: center;
     padding: 0;
@@ -54,11 +56,11 @@ a.top-logo>span {
     padding-bottom: 32px;
 }
 
-.top-list-item {
+.top__list-item {
     margin-right: 50px;
 }
 
-.top-list-item:last-child {
+.top__list-item:last-child {
     margin: 0;
 }
 
@@ -86,11 +88,11 @@ a.top-logo>span {
     background-color: var(--second-text-color);
 }
 
-.top-adr-social {
+.top__adr-social {
     padding-right: 0;
 }
 
-.top-adr-social .top-adr {
+.top__adr-social .top-adr {
     display: flex;
     align-items: center;
     justify-content: end;
@@ -98,11 +100,11 @@ a.top-logo>span {
     padding-bottom: 32px;
 }
 
-.top-adr-social .top-adr-item:not(:last-child) {
+.top__adr-social .top__adr-item:not(:last-child) {
     margin-right: 30px;
 }
 
-.top-adr-social .link {
+.top__adr-social .link {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -114,12 +116,12 @@ a.top-logo>span {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.top-adr-social .link:hover,
-.top-adr-social .link:focus {
+.top__adr-social .link:hover,
+.top__adr-social .link:focus {
     color: var(--second-text-color);
 }
 
-.top-adr-social .socials-icons-top {
+.top__adr-social .socials-icons-top {
     margin-right: 10px;
     fill: currentColor;
 }

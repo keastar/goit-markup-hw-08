@@ -1,6 +1,10 @@
 .deal {
     padding-top: 94px;
 
+    @media  and (min-width: 480px) {
+        
+    }
+
     &__container {
         display: flex;
         flex-direction: column;
