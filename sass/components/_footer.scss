@@ -1,0 +1,226 @@
+@import "../utils/btn_placeholder";
+
+.bott {
+
+    width: inherit;
+    color: var(--third-text-color);
+    background-color: var(--bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        width: 231px;
+        padding-right: 0px;
+    }
+
+    &__container2 {
+        padding-left: 70px;
+        padding-right: 0px;
+    }
+
+    &__container3 {
+        padding-left: 71px;
+        padding-right: 0px;
+    }
+
+    &__attach {
+        font-family: var(--main-font);
+        font-weight: 700;
+        text-transform: uppercase;
+
+        padding-bottom: 20px;
+        padding-top: 12px;
+    }
+
+    &__social-list {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 0px;
+    }
+
+    &__social-item {
+        padding-right: 10px;
+    }
+
+    &__social-link {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        justify-content: center;
+        align-items: center;
+
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            background-color: var(--second-text-color)
+        }
+
+        &:focus {
+            background-color: var(--second-text-color)
+        }
+    }
+
+    &__social-icon {
+        fill: var(--third-text-color);
+    }
+
+    &__logo {
+        font-family: "Raleway", sans-serif;
+        color: var(--second-text-color);
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+
+        padding-bottom: 20px;
+    }
+
+        &__adr-info {
+            font-style: normal;
+            text-decoration: none;
+            color: var(--third-text-color);
+    
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+       
+    
+            &:hover {
+                color: var(--second-text-color);
+            }
+    
+            &:focus {
+                color: var(--second-text-color);
+            }
+
+        }
+    
+        &__adr-c {
+            font-style: normal;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.6);
+    
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+            &:hover {
+                color: var(--second-text-color);
+            }
+    
+            &:focus {
+                color: var(--second-text-color);
+            }
+        
+        }
+    
+        &__adr-list {
+            padding-left: 0;
+        }
+    
+        &__adr-item:nth-last-child(n+2) {
+            padding-bottom: 9px;
+        }
+}
+
+.fotter-container {
+
+    display: flex;
+    padding-left: 15px;
+}
+
+a.bott__logo > span {
+
+    color: var(--third-text-color);
+}
+
+.name-lable-bott {
+
+    position: relative;
+}
+
+.name-label-input-bott {
+    
+    border-radius: 4px;
+    background-color: var(--bg-color);
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: var(--third-text-color);
+}
+
+.div-icon-bott {
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    display: flex;
+    width: 79px;
+    height: 50px;
+    color: red;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.input-icon-bott {
+
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+}
+
+ 
+.bott__butt {
+
+    position: relative;
+}
+ 
+.hero-but-butt {
+    @extend .btn;
+    position: absolute;
+    top: 55px;
+    
+    width: 200px;
+    height: 50px;
+    line-height: 30px;
+    margin-left: 2px;
+    padding: 10px 62px 10px 29px;
+}
+
+.h-butt {
+
+    display: flex;
+    width: 143px;
+}
+
+.butt-sing {
+
+    width: 109px;
+    height: 30px;
+}
+
+.butt-svg {
+
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
