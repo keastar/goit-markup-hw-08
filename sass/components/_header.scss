@@ -10,25 +10,40 @@
     @media screen and(min-width: 768px) {
         height: 80px;
     }
-    
-    @media screen and(min-width: 1200px) {
-        height: 80px;    }
 }
 
 .top-logo {
     font-family: "Raleway", sans-serif;
     color: var(--second-text-color);
-    font-size: 26px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.19;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: left;
     text-decoration: none;
 
     margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+
+    @media screen and(min-width: 768px) {
+        margin-right: 88px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+
+    }
+
+    @media screen and(min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+
+        margin-right: 93px;
+        padding-top: 24px;
+        padding-bottom: 25px;
+
+    }
 
 }
 
@@ -104,6 +119,13 @@ a.top-logo>span {
     justify-content: end;
     padding-top: 32px;
     padding-bottom: 32px;
+    padding-right: 0px;
+
+    @media screen and(max-width: 768px) {
+        display: block;
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
 }
 
 .top-adr-social .top-adr-item:not(:last-child) {
@@ -120,6 +142,13 @@ a.top-logo>span {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and(max-width: 768px) {
+        font-size: 12px;
+        line-height: 14.06px;
+
+        margin-bottom: 10px;
+    }
 }
 
 .top-adr-social .link:hover,
@@ -130,4 +159,18 @@ a.top-logo>span {
 .top-adr-social .socials-icons-top {
     margin-right: 10px;
     fill: currentColor;
+
+    @media screen and(max-width: 768px) {
+        font-size: 12px;
+        line-height: 14.06px;
+
+        width: 14px;
+        height: 10px;
+    
+    }
+}
+
+.top-adr-social .phone {
+    width: 10px;
+    height: 14px;
 }
