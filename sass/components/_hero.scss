@@ -1,16 +1,29 @@
  @import "../utils/btn_placeholder";
 
 .hero {
-    max-width: 1600px;
+    width: 480px;
     margin: 0 auto;
 
     color: var(--third-text-color);
     background-color: var(--bg-color);
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
 
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_HEROpro.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/480_400.png);
 
+    @media screen and(min-width: 768px) {
+            width: 768px;
+            margin: 0 auto;
+            background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/768_400.png);
+        }
+    
+    @media screen and(min-width: 1200px) {
+            width: 100%;
+            padding-top: 200px;
+            padding-bottom: 200px;
+            margin: 0 auto;
+            background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_HEROpro.jpg);
+        }
 
     &__container {
         display: flex;
@@ -20,17 +33,22 @@
 
     &__title {
         text-transform: uppercase;
-        font-size: 44px;
+        font-size: 26px;
         font-weight: 900;
-        line-height: 1.36;
+        line-height: 1.62;
         letter-spacing: 0.06em;
         text-align: center;
         padding-bottom: 30px;
+
+        @media screen and(min-width: 1200px) {
+            font-size: 44px;
+            line-height: 1.36;
+        }
     }
 
     &__but {
 
-       // @extend %btn;
+        @extend .btn;
         margin: 0 auto;
         line-height: 1.875;
         padding: 8px 30px;  
