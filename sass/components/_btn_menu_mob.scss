@@ -4,18 +4,22 @@
     height: 40px;
 
     background-color: transparent;
-    border: transparent;
+    border: none;
     outline: transparent;
+    border-color: transparent;
+    padding: 0px;
 
     &__icon {
         width: 40px;
         height: 40px;
 
-        &-open{
+        &-open {
             opacity: 1;
+            fill: var(--second-text-color);
         }
 
         &-close {
+            fill: transparent;
             opacity: 0;
         }
     }
