@@ -7,10 +7,8 @@
     align-items: center;
     height: 60px;
 
-    @media screen and(min-width: 768px) {
-        
+    @media screen and(max-width: 767px) {
         height: 80px;
-        justify-content: space-between;
     }
 }
 
@@ -25,7 +23,7 @@
     text-align: left;
     text-decoration: none;
 
-    margin-right: 93px;
+    margin-right: 276px;
     padding-top: 16px;
     padding-bottom: 16px;
 
@@ -53,10 +51,6 @@ a.top-logo > span {
     color: var(--main-text-color);
 }
 
-@media screen and (max-width:767px) 
-    .top-menu {
-        display: none;
-    }
 
 .top-menu a {
     text-decoration: none;
@@ -66,6 +60,11 @@ a.top-logo > span {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width:767px) {
+            opacity: 0;;
+        }
+
 }
 
 .top-menu a:hover {
@@ -82,10 +81,6 @@ a.top-logo > span {
     padding: 0;
     padding-top: 32px;
     padding-bottom: 32px;
-
-    @media screen and(max-width: 767px) {
-        display: none;
-    }
 }
 
 .top-list-item {
@@ -102,6 +97,11 @@ a.top-logo > span {
     text-decoration: none;
     color: var(--main-text-color);
 
+}
+.top-adr > .top-adr-item:last-child > .link {
+    @media screen and (max-width: 1199px) {
+            margin-bottom: 0px;
+        }
 }
 
 .current {
@@ -122,24 +122,32 @@ a.top-logo > span {
 
 .top-adr-social {
     padding-right: 0;
+    margin-right: 0;
+    margin-left: auto;
    
 }
 
 .top-adr-social .top-adr {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    display: none;
+    
+    padding-top: 0px;
+    padding-bottom: 0px;
     padding-right: 0px;
 
-    @media screen and (min-width: 767px) {
-            display: none;
-        }
-    @media screen and(max-width: 768px) {
+    @media screen and (min-width: 768px) {
         display: block;
+        align-items: center;
+        justify-content: flex-end;
         padding-top: 21px;
         padding-bottom: 21px;
+        }
+
+    @media screen and(min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 }
 
