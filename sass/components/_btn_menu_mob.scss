@@ -19,6 +19,10 @@
 
         &-open {
             opacity: 1;
+            fill: var(--main-text-color);
+        }
+
+        &-open:hover {
             fill: var(--second-text-color);
         }
 
