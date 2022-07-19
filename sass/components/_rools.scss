@@ -1,12 +1,18 @@
 .rools {
     padding-top: 94px;
     padding-bottom: 94px;
+
+    @media screen and (max-width: 1199px) {
+            display: none;
+        }
 }
 
 .rools-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+   
 }
 
 .pic {

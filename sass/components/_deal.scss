@@ -1,5 +1,6 @@
 .deal {
     padding-top: 60px;
+    padding-bottom: 60px;
 
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
@@ -30,6 +31,7 @@
         align-items: center;
         border-radius: 4px;
         margin-bottom: 30px;
+        // margin-top: 30px;
         background-color: var(--bg-colorlight);
     
         @media screen and (min-width: 1200px ) {
@@ -56,29 +58,34 @@
     }
 
     &__article {
+        // width: 270px;
+        height: 75px;
         color: var(--main-text-colorlight);
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
+        justify-content: right;
         padding-top: 10px;
         margin-bottom: 30px;
+        margin: 0 auto;
+       
 
-        @media screen and (max-width: 1200px) {
-                color: var(--main-text-colorlight);
-                font-size: 14px;
-                line-height: 1.71;
-                letter-spacing: 0.03em;
-                padding-top: 10px;
+        @media screen and (max-width: 1199px) {
+            color: var(--main-text-colorlight);
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            padding-top: 10px;
+
         }
-        width: 270px;
-        height: 75px;
+       
     }
 
     &__icon {
         display: flex;
         position: absolute;
-        top: 25px;
-        left: 192,34px;
+        justify-content: center;
+        align-items: center;
         fill: var(--main-color-icon);
         padding-left: 10px;
     }
