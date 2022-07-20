@@ -35,7 +35,6 @@
 
         @media screen and(max-width: 1199px) {
             padding-bottom: 0px;
-            padding-right: 30px;
             flex-wrap: wrap;
             gap: 30px;
         }
@@ -58,7 +57,7 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
         @media screen and(max-width: 1199px) {
-            display: flex;
+           
             flex-wrap: wrap;
             margin-right: 0px;
             margin-left: 0px;

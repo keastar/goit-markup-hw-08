@@ -2,9 +2,9 @@
     background-color: var(--bg-colorlight);
     padding-top: 94px;
     padding-bottom: 94px;
-    width: 100%;
+    
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 1199px) {
         padding-top: 60px;
         padding-bottom: 60px;
     }
@@ -16,7 +16,7 @@
     flex-direction: column;
     align-items: center;
 
-    width: 100%;
+  
 }
 
 .team-title {
@@ -63,18 +63,26 @@
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
     @media screen and(min-width: 768px) {
-        max-width: calc((100% - 30px) / 2);
+        max-width: calc((100%-30px)/2);
     }
 
-    @media screen and (max-width: 1199px) {
-        width: 100%;
-        height: auto;
+    @media screen and(min-width: 1200px) {
+        width: 270px;
+        // height: 428px;
     }
-    }
+}
 
 .img-teamit {
     display: block;
-    width: 100%;
+    
+    @media screen and(min-width: 320px and max-width: 767px) {
+        width: 100%;
+    }
+
+    @media screen and(min-width: 1200px) {
+        width: 270px;
+        height: 260px;
+    }
 }
 
 .bot-teamit {
@@ -115,7 +123,7 @@
     padding-right: 32px;
     justify-content: space-between;
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 767px) {
         padding-left: 122px;
         padding-right: 122px;
     }
