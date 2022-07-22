@@ -78,12 +78,12 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .container {
     max-width: 480px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     max-width: 768px;
   }
@@ -103,7 +103,12 @@ body {
   align-items: center;
   height: 60px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .top-container {
+    height: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .top-container {
     height: 80px;
   }
@@ -123,7 +128,7 @@ body {
   padding-top: 16px;
   padding-bottom: 16px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .top-logo {
     margin-right: 88px;
     padding-top: 26px;
@@ -474,7 +479,8 @@ a.top-logo > span {
 }
 
 .hero {
-  width: 480px;
+  width: 100%;
+  max-width: 480px;
   margin: 0 auto;
   color: var(--third-text-color);
   background-color: var(--bg-color);
@@ -482,16 +488,16 @@ a.top-logo > span {
   padding-bottom: 118px;
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/480_400.png);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    width: 768px;
+    max-width: 768px;
     margin: 0 auto;
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/768_400.png);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 100%;
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     margin: 0 auto;
@@ -624,14 +630,13 @@ a.top-logo > span {
 
 .team {
   background-color: var(--bg-colorlight);
-  padding-top: 94px;
-  padding-bottom: 94px;
-  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .team {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -639,7 +644,6 @@ a.top-logo > span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 }
 
 .team-title {
@@ -647,56 +651,61 @@ a.top-logo > span {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .team-title {
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }
 }
 
 .team-container-list {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
   padding-left: 0;
-  width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .team-container-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .team-container-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    align-items: center;
+    padding-left: 0;
   }
 }
 
 .teamit {
-  height: 428px;
+  width: 450px;
+  height: 622px;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .teamit {
     max-width: calc((100% - 30px) / 2);
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .teamit {
-    width: 100%;
-    height: auto;
+    width: 270px;
+    height: 428px;
   }
 }
 
 .img-teamit {
   display: block;
-  width: 100%;
+  width: 450px;
+  height: 460px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .img-teamit {
+    width: 354px;
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .img-teamit {
+    height: 270px;
+  }
 }
 
 .bot-teamit {
@@ -735,7 +744,7 @@ a.top-logo > span {
   padding-right: 32px;
   justify-content: space-between;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .team-social-list {
     padding-left: 122px;
     padding-right: 122px;
@@ -868,12 +877,11 @@ a.top-logo > span {
 @media screen and (max-width: 1199px) {
   .clients__list {
     padding-bottom: 0px;
-    padding-right: 30px;
     flex-wrap: wrap;
     gap: 30px;
   }
 }
-.clients__link {
+.clients__list__link {
   display: flex;
   width: 170px;
   height: 92px;
@@ -888,20 +896,29 @@ a.top-logo > span {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients__link:hover {
+@media screen and (max-width: 1199px) {
+  .clients__list__link {
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+    max-width: calc((100% - 30px) / 2);
+    height: auto;
+  }
+}
+.clients__list__link:hover {
   border-color: var(--second-text-color);
 }
-.clients__link:focus {
+.clients__list__link:focus {
   border-color: var(--second-text-color);
 }
-.clients__link:hover > .clients__icon {
+.clients__list__link:hover > .clients__icon {
   fill: var(--second-text-color);
 }
-.clients__link:focus > .clients__icon {
+.clients__list__link:focus > .clients__icon {
   fill: var(--second-text-color);
 }
-.clients__icon {
-  fill: var(--main-color-icon);
+.clients__list__icon {
+  fill: var(--main-text-colorlight);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

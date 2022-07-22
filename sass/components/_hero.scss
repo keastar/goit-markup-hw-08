@@ -1,7 +1,8 @@
  @import "../utils/btn_placeholder";
 
 .hero {
-    width: 480px;
+    width: 100%;
+    max-width: 480px;
     margin: 0 auto;
 
     color: var(--third-text-color);
@@ -11,14 +12,14 @@
 
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/480_400.png);
 
-    @media screen and(min-width: 768px) {
-            width: 768px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+            max-width: 768px;
             margin: 0 auto;
             background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/768_400.png);
         }
     
-    @media screen and(min-width: 1200px) {
-            width: 100%;
+    @media screen and (min-width: 1200px) {
+            max-width: 1600px;
             padding-top: 200px;
             padding-bottom: 200px;
             margin: 0 auto;
