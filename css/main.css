@@ -537,6 +537,7 @@ a.top-logo > span {
 @media screen and (min-width: 1200px) {
   .deal {
     padding-top: 94px;
+    padding-bottom: 0px;
   }
 }
 .deal__container {
@@ -667,6 +668,7 @@ a.top-logo > span {
 }
 @media screen and (min-width: 1200px) {
   .team-container-list {
+    flex-wrap: nowrap;
     align-items: center;
     padding-left: 0;
   }
@@ -686,8 +688,12 @@ a.top-logo > span {
 }
 @media screen and (min-width: 1200px) {
   .teamit {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
     width: 270px;
-    height: 428px;
+    height: auto;
   }
 }
 
@@ -890,35 +896,26 @@ a.top-logo > span {
   margin-right: 15px;
   margin-left: 15px;
   border-radius: 4px;
-  border: 1px solid var(--main-color-icon);
-  background-color: var(--third-text-color);
+  border: 1px solid var --main-color-icon;
+  background-color: var --third-text-color;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 1199px) {
-  .clients__list__link {
-    flex-wrap: wrap;
-    margin-right: 0px;
-    margin-left: 0px;
-    max-width: calc((100% - 30px) / 2);
-    height: auto;
-  }
-}
-.clients__list__link:hover {
+.clients__list:hover {
   border-color: var(--second-text-color);
 }
-.clients__list__link:focus {
+.clients__list:focus {
   border-color: var(--second-text-color);
 }
-.clients__list__link:hover > .clients__icon {
+.clients__list:hover > .clients__icon {
   fill: var(--second-text-color);
 }
-.clients__list__link:focus > .clients__icon {
+.clients__list:focus > .clients__icon {
   fill: var(--second-text-color);
 }
-.clients__list__icon {
-  fill: var(--main-text-colorlight);
+.clients__icon {
+  fill: var(--main-color-icon);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
