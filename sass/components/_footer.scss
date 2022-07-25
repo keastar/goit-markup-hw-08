@@ -1,18 +1,20 @@
 @import "../utils/btn_placeholder";
 
-.bott {
+.bottom {
 
     width: inherit;
     color: var(--third-text-color);
     background-color: var(--bg-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    align-items: center;
 
     &__container {
         display: flex;
         flex-direction: column;
         width: 231px;
         padding-right: 0px;
+
     }
 
     &__container2 {
@@ -83,6 +85,15 @@
         padding-bottom: 20px;
     }
 
+        &__logo span {
+            color: var(--third-text-color);
+        }
+
+        &__bottom__adr-item {
+            display: block;
+            justify-content: center;
+        }
+
         &__adr-info {
             font-style: normal;
             text-decoration: none;
@@ -91,7 +102,11 @@
             transition-property: color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-       
+            
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                display: block;
+                justify-content: center;
+            }
     
             &:hover {
                 color: var(--second-text-color);
@@ -124,6 +139,12 @@
     
         &__adr-list {
             padding-left: 0;
+
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                display: block;
+                justify-content: center;
+                align-items: center;
+            }
         }
     
         &__adr-item:nth-last-child(n+2) {
@@ -135,6 +156,12 @@
 
     display: flex;
     padding-left: 15px;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+            display: block;
+            align-items: center;
+            justify-content: center;
+        }
 }
 
 a.bott__logo > span {
@@ -142,12 +169,12 @@ a.bott__logo > span {
     color: var(--third-text-color);
 }
 
-.name-lable-bott {
+.name-lable-bottom {
 
     position: relative;
 }
 
-.name-label-input-bott {
+.name-label-input-bottom {
     
     border-radius: 4px;
     background-color: var(--bg-color);
@@ -164,7 +191,7 @@ a.bott__logo > span {
     color: var(--third-text-color);
 }
 
-.div-icon-bott {
+.div-icon-bottom {
 
     position: absolute;
     top: 0px;
@@ -179,7 +206,7 @@ a.bott__logo > span {
 
 }
 
-.input-icon-bott {
+.input-icon-bottom {
 
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
@@ -189,7 +216,7 @@ a.bott__logo > span {
 }
 
  
-.bott__butt {
+.bottom__butt {
 
     position: relative;
 }
