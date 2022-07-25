@@ -3,6 +3,9 @@
     padding-top: 60px;
     padding-bottom: 60px;
     
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-bottom: 30px;
+    }
 
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
@@ -36,6 +39,11 @@
     flex-wrap: wrap;
     gap: 30px;
     padding-left: 0;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        gap: 0px;
+        
+    }
     
     @media screen and (min-width: 1200px) {
 
@@ -56,8 +64,14 @@
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        // width: 100%;
-        max-width: calc((100% - 30px) / 2);
+        width: 354px;
+        height: auto;
+        // width: calc((100% - 30px) / 2);
+        flex: 1 1 calc((100% / 2) - 30px);
+        margin-bottom: 30px;
+
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     }
 
     @media screen and (min-width: 1200px) {
@@ -92,7 +106,7 @@
     padding-bottom: 30px;
 
     @media screen and (max-width: 1199px) {
-        padding-bottom: 25px;
+        padding-bottom: 24px;
     }
 
 }
@@ -120,13 +134,18 @@
 
 .team-social-list {
     display: flex;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 122px;
+    padding-right: 122px;
     justify-content: space-between;
 
-    @media screen and (max-width: 767px) {
-        padding-left: 122px;
-        padding-right: 122px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-left: 74px;
+        padding-right: 74px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 32px;
+        padding-right: 32px;
     }
 }
 
