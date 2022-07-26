@@ -560,9 +560,10 @@ a.top-logo > span {
   }
 }
 .deal__pic {
-  display: block;
+  display: flex;
   position: relative;
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   height: 120px;
   justify-content: center;
   align-items: center;
@@ -1040,6 +1041,8 @@ a.top-logo > span {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .bottom__attach {
     text-align: center;
+    padding-bottom: 20px;
+    padding-top: 60px;
   }
 }
 .bottom__social-list {
@@ -1054,6 +1057,9 @@ a.top-logo > span {
 }
 .bottom__social-item {
   padding-right: 10px;
+}
+.bottom__social-item:last-child {
+  padding-right: 0px;
 }
 .bottom__social-link {
   display: flex;
@@ -1116,6 +1122,11 @@ a.top-logo > span {
 }
 .bottom__adr-item:nth-last-child(n+2) {
   padding-bottom: 9px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .bottom__adr-item:nth-last-child(n+2) {
+    padding-bottom: 8px;
+  }
 }
 .bottom__adr-info {
   font-style: normal;
@@ -1190,6 +1201,13 @@ a.bott__logo > span {
   letter-spacing: 0.03em;
   color: var(--third-text-color);
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .name-label-input-bottom {
+    max-width: 450px;
+    margin: 0 auto;
+    resize: vertical;
+  }
+}
 
 .div-icon-bottom {
   position: absolute;
@@ -1214,6 +1232,12 @@ a.bott__logo > span {
 .bottom__butt {
   position: relative;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .bottom__butt {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 .hero-but-butt {
   position: absolute;
@@ -1226,14 +1250,16 @@ a.bott__logo > span {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .hero-but-butt {
+    display: flex;
     top: 20px;
-    margin-left: 120px;
+    margin-left: auto;
   }
 }
 
 .h-butt {
   display: flex;
   width: 143px;
+  justify-content: center;
 }
 
 .butt-sing {
