@@ -13,6 +13,18 @@
         padding-bottom: 130px;
     }
 
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-bottom: 276px;
+    }
+
+    &__f_s_containers {
+        display: flex;
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            justify-content: space-evenly;
+        }
+    }
+
     &__container {
         display: flex;
         flex-direction: column;
@@ -24,6 +36,11 @@
             width: auto;
 
             padding: 0px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            
+
         }
 
     }
@@ -38,10 +55,15 @@
             
             align-items: center;
         }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
     }
 
     &__container3 {
-        padding-left: 71px;
+        padding-left: 93px;
         padding-right: 0px;
 
         @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -51,6 +73,12 @@
             padding-left: 0px;
             padding-right: 0px;
             
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            position: relative;
+            top: 60px;
+
         }
     }
 
@@ -68,6 +96,11 @@
             padding-bottom: 20px;
             padding-top: 60px;
         }
+        
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            padding-top: 5px;
+        }
+        
     }
 
     &__social-list {
@@ -208,6 +241,27 @@
         }
         
     }
+
+    &__butt {
+        width: 212px;
+        display: flex;
+        justify-content: end;
+
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            display: flex;
+            justify-content: center;
+            }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            position: relative;
+            top: 166px;
+            
+            width: 738px;
+            height: 50px;
+            justify-content: center;
+            
+        }
+    }
 }
 
 .fotter-container {
@@ -219,6 +273,11 @@
             display: block;
             align-items: center;
         }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: block;
+        
+    }
 }
 
 a.bott__logo > span {
@@ -279,17 +338,6 @@ a.bott__logo > span {
     line-height: 20px;
     letter-spacing: 0.03em;
 }
-
- 
-.bottom__butt {
-    
-    position: relative;
-
-    @media screen and (min-width: 320px) and (max-width: 767px) {
-        display: flex;
-        justify-content: center;
-    }
-}
  
 .hero-but-butt {
     @extend .btn;
@@ -299,7 +347,7 @@ a.bott__logo > span {
     width: 200px;
     height: 50px;
     line-height: 30px;
-    margin-left: 2px;
+ // margin-left: 12px;
     padding: 10px 62px 10px 29px;
 
     @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -307,6 +355,10 @@ a.bott__logo > span {
         display: flex;
         top: 20px;
         margin-left: auto;    
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        top: 0px;
     }
 }
 
