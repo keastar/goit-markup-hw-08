@@ -11,6 +11,7 @@
 
     @media screen and (min-width: 320px) and (max-width: 767px) {
         padding-bottom: 130px;
+        height: 603px;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -22,6 +23,10 @@
 
         @media screen and (min-width: 768px) and (max-width: 1199px) {
             justify-content: space-evenly;
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            display: block;
         }
     }
 
@@ -78,6 +83,12 @@
         @media screen and (min-width: 768px) and (max-width: 1199px) {
             position: relative;
             top: 60px;
+            padding-left: 0px;
+            
+            display: block;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
 
         }
     }
@@ -108,7 +119,7 @@
         justify-content: flex-start;
         padding-left: 0px;
 
-        @media screen and (min-width: 320px) and (max-width: 767px) {
+        @media screen and (min-width: 320px) and (max-width: 1199px) {
             justify-content: center;
         }
     }
@@ -246,16 +257,21 @@
         width: 212px;
         display: flex;
         justify-content: end;
+        top: 48px;
 
         @media screen and (min-width: 320px) and (max-width: 767px) {
             display: flex;
             justify-content: center;
+
+            width: auto;
+            height: 50px;
+            margin-top: 20px;
             }
 
         @media screen and (min-width: 768px) and (max-width: 1199px) {
             position: relative;
-            top: 166px;
             
+            top: 80px;
             width: 738px;
             height: 50px;
             justify-content: center;
@@ -294,7 +310,7 @@ a.bott__logo > span {
     
     border-radius: 4px;
     background-color: var(--bg-color);
-    width: 358px;
+    width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     padding-left: 16px;
@@ -311,7 +327,10 @@ a.bott__logo > span {
         max-width: 450px;
         margin: 0 auto;
         resize: vertical;
+    }
 
+    @media screen and (min-width: 1200px) {
+        width: 358px;
     }
 }
 
@@ -342,23 +361,23 @@ a.bott__logo > span {
 .hero-but-butt {
     @extend .btn;
     position: absolute;
-    top: 55px;
     
     width: 200px;
     height: 50px;
     line-height: 30px;
- // margin-left: 12px;
+    margin-top: 56px;
     padding: 10px 62px 10px 29px;
 
     @media screen and (min-width: 320px) and (max-width: 767px) {
         
         display: flex;
-        top: 20px;
-        margin-left: auto;    
+        // top: 20px;
+        margin-left: auto;
+        margin-top: 0px;    
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        top: 0px;
+        margin-top: 0px;
     }
 }
 
