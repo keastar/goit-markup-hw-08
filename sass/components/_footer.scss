@@ -323,8 +323,13 @@ a.bott__logo > span {
     letter-spacing: 0.03em;
     color: var(--third-text-color);
 
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
     @media screen and (min-width: 320px) and (max-width: 767px) {
-        max-width: 100vw;
+        max-width: 90vw;
         width: 450px;
         margin: 0 auto;
         resize: vertical;

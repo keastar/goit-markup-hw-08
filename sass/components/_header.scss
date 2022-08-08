@@ -28,14 +28,13 @@
     text-decoration: none;
 
     margin-right: 276px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-
+    
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+        margin-right: 121px;
+    }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-right: 88px;
-        padding-top: 26px;
-        padding-bottom: 26px;
 
     }
 
@@ -44,8 +43,6 @@
         line-height: 1.19;
 
         margin-right: 93px;
-        padding-top: 24px;
-        padding-bottom: 25px;
 
     }
 
@@ -83,8 +80,6 @@ a.top-logo > span {
     display: flex;
     align-items: center;
     padding: 0;
-    padding-top: 32px;
-    padding-bottom: 32px;
 
     @media screen and (max-width: 767px) {
         display: none;
@@ -120,7 +115,7 @@ a.top-logo > span {
     content: '';
     display: block;
     position: absolute;
-    bottom: -32px;
+    bottom: -28px;
     left: 0;
     width: 100%;
     height: 4px;
