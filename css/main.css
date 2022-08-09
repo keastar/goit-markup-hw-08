@@ -435,11 +435,8 @@ a.top-logo > span {
   color: #2196F3;
 }
 
-.works {
-  background-color: #e5e5e5;
-}
-
 .promodemo {
+  background-color: white;
   border-top: 1px solid #ECECEC;
   padding-top: 94px;
   padding-bottom: 94px;

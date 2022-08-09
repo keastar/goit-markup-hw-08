@@ -1,10 +1,8 @@
-.works {
-    background-color: #e5e5e5;
-}
 
 .promodemo {
-
+    background-color: white;
     border-top: 1px solid #ECECEC;
+   
     padding-top: 94px;
     padding-bottom: 94px;
 
@@ -20,12 +18,16 @@
         display: flex;
         flex-wrap: wrap;
         padding-left: 0;
+
+        
     }
 
     &__item {
 
         margin-right: 8px;
         margin-bottom: 50px;
+            
+        }
     }
 
     &__item:last-child {
@@ -33,7 +35,7 @@
         margin-right: 0;
     }
 
-}
+
 
 .promo-titles {
 
@@ -77,6 +79,13 @@
     flex-wrap: wrap;
     padding-left: 0;
 
+    max-width: 100%;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        // flex-wrap: wrap;
+        gap: 30px;
+    }
+
 }
 
 .demo__item {
@@ -88,6 +97,15 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+         width: 354px;
+         height: 440px;
+         margin-right: 0px;
+         margin-bottom: 0px;
+
+        flex: 1 1 calc((100% / 2) - 30px);
+    }
+
     &:hover {
         cursor: pointer;
         box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
@@ -96,14 +114,29 @@
 
     &:not(:nth-child(3n+3)) {
         margin-right: 30px;
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            margin-right: 0px;
+        }
     }
 
     &:not(:nth-child(n+7)) {
         margin-bottom: 30px;
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            margin-bottom: 0px;
+        }
     }
 
     &-pic {
         display: block;
+        width: 370px;
+        height: 294px;
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            width: 354px;
+            
+        }
     }
 }
 
@@ -112,13 +145,18 @@
     cursor: pointer;
 
     overflow: hidden;
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 354px;
+        
+    }
 }
 
 .demo__descr {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     position: absolute;
     left: 0px;
@@ -156,7 +194,7 @@
     color: var(--main-text-color);
     font-weight: 700;
     font-size: 18px;
-    line-height: 2;
+    line-height: 2px;
     letter-spacing: 0.06em;
     padding-bottom: 4px;
 }
