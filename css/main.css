@@ -108,7 +108,7 @@ body {
     height: 60px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .top-container {
     height: 80px;
   }
@@ -263,7 +263,7 @@ a.top-logo > span {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .top-adr-social .link {
     font-size: 12px;
     line-height: 14.06px;
@@ -532,6 +532,11 @@ a.top-logo > span {
     height: 146px;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .demo__item {
+    width: 450px;
+  }
+}
 .demo__item:hover {
   cursor: pointer;
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
@@ -623,19 +628,23 @@ a.top-logo > span {
     height: 110px;
     width: auto;
   }
-}
-.demo__block:last-child {
-  width: 354px;
+  .demo__block:last-child {
+    width: 354px;
+  }
 }
 
 .demo__titles {
-  width: 306px;
   color: var(--main-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
   padding-bottom: 4px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .demo__titles {
+    width: 306px;
+  }
 }
 
 .demo__position {
