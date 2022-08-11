@@ -6,36 +6,41 @@
     padding-top: 94px;
     padding-bottom: 94px;
 
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding: 60px 0px;
+    }
+
     &__container {
 
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+   
 
-    &__container-list {
+        &-list {
 
-        display: flex;
-        flex-wrap: wrap;
-        padding-left: 0;
-
+            display: flex;
+            flex-direction: row;
+            padding-left: 0;
         
+        }
+
     }
 
     &__item {
-
         margin-right: 8px;
         margin-bottom: 50px;
-            
-        }
-    }
-
-    &__item:last-child {
-
+    
+        &:last-child {
         margin-right: 0;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            margin-bottom: 30px;
+        }
+
     }
-
-
+}
 
 .promo-titles {
 
@@ -82,7 +87,6 @@
     max-width: 100%;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        // flex-wrap: wrap;
         gap: 30px;
     }
 
@@ -99,11 +103,19 @@
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
          width: 354px;
-         height: 440px;
+         height: 404px;
          margin-right: 0px;
          margin-bottom: 0px;
 
         flex: 1 1 calc((100% / 2) - 30px);
+
+        &:first-child, &:first-child + li  {
+            height: 440px;
+
+            .demo__block {
+                height: 146px;
+            }
+        }
     }
 
     &:hover {
@@ -125,6 +137,12 @@
 
         @media screen and (min-width: 768px) and (max-width: 1199px) {
             margin-bottom: 0px;
+        }
+    }
+
+    &:last-child {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            width: 354px;
         }
     }
 
@@ -174,6 +192,11 @@
     transform: translateY(100%);
     transition: transform;
     transition-duration: 250ms;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: auto;
+        
+    }
 }
 
 .demo__thumb:hover .demo__descr {
@@ -188,13 +211,25 @@
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        height: 110px;
+        width: auto;
+
+    }
+
+    &:last-child {
+        width: 354px;
+    }
 }
 
 .demo__titles {
+    width: 306px;
+
     color: var(--main-text-color);
     font-weight: 700;
     font-size: 18px;
-    line-height: 2px;
+    line-height: 36px;
     letter-spacing: 0.06em;
     padding-bottom: 4px;
 }
@@ -204,4 +239,5 @@
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+
 }
