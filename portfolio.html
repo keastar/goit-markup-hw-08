@@ -16,7 +16,17 @@
     <body>
         <header class="top">
             <div class="container top-container">
-                <a class="top-logo" href="#">Web<span>Studio</span></a>
+                <div class="mini-menu">
+                    <a class="top-logo" href="#">Web<span>Studio</span></a>
+                    <button class="menu-btn" type="button" aria-label="кнопка открытия меню" aria-expanded="false" data-menu-button>
+                    <svg class="menu-btn__icon" width="40px" height="40px">
+                        <use class="menu-btn__icon-open" href="./images/icons/icons6.svg#open-menu-icon">
+                        </use>
+                        <use class="menu-btn__icon-close" href="./images/icons/icons6.svg#close-menu-icon">
+                        </use>
+                    </svg>
+                    </button>
+                </div>
                 <nav class="top-menu">
                     <ul class="top-list">
                         <li class="top-list-item"><a href="index.html">Студия</a></li>
@@ -300,5 +310,46 @@
                 </div>
             </div>
         </footer>
+        <div class="mobile-overlay" data-menu>
+            <div class="mobile-menu">
+                <nav class="mobile-nav">
+                    <ul class="mobile-nav__list">
+                        <li class="mobile-nav__item">
+                            <a class="mobile-nav__link link" href="index.html">Студия</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a class="mobile-nav__link link" href="#">Портфолио</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a class="mobile-nav__link link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu__contacts">
+                    <a class="mobile-menu__link link" href="tel:+380991111111">+38 099 111 11 11</a>
+                    <a class="mobile-menu__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </div>
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a class="socials__link link" href="https://www.instagram.com/" target="_blank"
+                            rel="noopener noreferrer">Instagram</a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link link" href="https://twitter.com/" target="_blank"
+                            rel="noopener noreferrer">Twitter</a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link link" href="https://www.facebook.com/" target="_blank"
+                            rel="noopener noreferrer">Facebook</a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link link" href="https://www.linkedin.com/" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="js/menu.js">
+        </script>
     </body>
 </html>
