@@ -536,6 +536,11 @@ a.top-logo > span {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .demo__item {
+    height: auto;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .demo__item {
     width: 354px;
@@ -553,8 +558,8 @@ a.top-logo > span {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .demo__item {
-    max-width: 100vw;
-    width: 450px;
+    width: 100vw;
+    max-width: 450px;
   }
 }
 .demo__item:hover {
@@ -585,6 +590,12 @@ a.top-logo > span {
 .demo__item-pic {
   width: 450px;
   height: 294px;
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .demo__item-pic {
+    width: 100vw;
+    height: auto;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .demo__item-pic {
@@ -628,6 +639,13 @@ a.top-logo > span {
   transition: transform;
   transition-duration: 250ms;
 }
+@media screen and (min-width: 320px) and (max-width: 380px) {
+  .demo__descr {
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 3%;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .demo__descr {
     width: auto;
@@ -646,6 +664,11 @@ a.top-logo > span {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .demo__block {
+    max-width: 100vw;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .demo__block {
