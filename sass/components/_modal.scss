@@ -35,7 +35,8 @@
     background-color: #ffffff;
 
     @media screen and (min-width: 320px) and (max-width: 479px) {
-        width: 450px;
+        width: 100vw;
+        max-width: 450px;
         height: 609px;
         
     }
@@ -150,7 +151,8 @@ input.name-label-input {
     padding-left: 42px;
 
     @media screen and (min-width: 320px) and (max-width: 1199px) {
-        width: 370px;
+        width: 100%;
+        max-width: 370px;
     }
 }
 
@@ -185,7 +187,8 @@ input.name-label-input {
     border-radius: 4px;
 
     @media screen and (min-width: 320px) and (max-width: 1199px) {
-        width: 370px;
+        width: 100%;
+        max-width: 370px;
     }
 }
 

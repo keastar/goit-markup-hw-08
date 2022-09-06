@@ -27,10 +27,14 @@
 }
 
 .mobile-menu {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     padding-top: 48px;
     padding-left: 40px;
+
+    justify-content: space-between;
 
     background-color: var(--third-text-color);
 
@@ -40,7 +44,6 @@
 }
 
 .mobile-nav {
-    margin-bottom: 302px;
 
     &__list {
         padding-left: 0;
@@ -88,6 +91,10 @@
             line-height: 40px;
 
             color: var(--second-text-color);
+
+            @media screen and (min-width: 320px) and (max-width: 400px) {
+                font-size: 30px;
+            }
         }
 }
 
@@ -97,9 +104,17 @@
 
     &__item {
         padding-right: 10px;
+
+        @media screen and (min-width: 320px) and (max-width: 400px) {
+            padding-right: 3px;
+        }
         
         &:not(:first-child) {
             padding-left: 10px;
+
+            @media screen and (min-width: 320px) and (max-width: 400px) {
+                padding-left: 3px;
+            }
         }
 
         &:not(:last-child) {
@@ -114,6 +129,10 @@
         
         letter-spacing: 0.02em;
         color: #2196F3;
+
+        @media screen and (min-width: 320px) and (max-width: 400px) {
+            font-size: 15px;
+        }
         
     }
 }

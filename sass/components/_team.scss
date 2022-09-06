@@ -2,10 +2,6 @@
     background-color: var(--bg-colorlight);
     padding-top: 60px;
     padding-bottom: 60px;
-    
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        padding-bottom: 30px;
-    }
 
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
@@ -22,7 +18,7 @@
 
 .team-title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     letter-spacing: 0.03em;
 
@@ -30,6 +26,7 @@
 
     @media screen and (min-width: 1200px) {
         padding-bottom: 50px;
+        font-size: 36px;
     }
 }
 
